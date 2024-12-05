@@ -6597,6 +6597,7 @@ var Swiper = function() {
   return o.use(fr),
   o
 }();
+
 document.addEventListener("DOMContentLoaded", () => {
   const r = document.querySelectorAll("input[type=tel]");
   phoneMask(r);
@@ -6616,17 +6617,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   const t = window.location.pathname
     , a = document.querySelectorAll(".global-navigation a");
+
+
+
   a.forEach(function(n) {
+
+        // console.log('n = ', n);
+        // console.log("t = window.location.pathname = ", t);
+        // console.log('n.getAttribute("href") = ', n.getAttribute("href"));
+        // console.log('n.getAttribute("href") === t ', n.getAttribute("href") === t);
+
       if (n.getAttribute("href") === t) {
           n.parentNode.classList.add("active-li");
           switch (t) {
           case "/":
               document.querySelector(".hamburger .home").classList.add("hamburger-line-active");
               break;
-          case "/home/VideoSurveillance":
+          case "/home/VideoSurveillance/":
               document.querySelector(".hamburger .VideoSurveillance").classList.add("hamburger-line-active");
               break;
-          case "/home/ExplosionProof":
+          case "/home/ExplosionProof/":
               document.querySelector(".hamburger .ExplosionProof").classList.add("hamburger-line-active");
               break;
           default:
