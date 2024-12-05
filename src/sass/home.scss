@@ -1,5 +1,5 @@
 .main {
-  background: url("/images/img/main-section.jpg") center center/cover no-repeat;
+  background: url("../images/img/main-section.jpg") center center/cover no-repeat;
   padding: 96px 20px 80px;
   min-height: 800px
 }
@@ -498,13 +498,13 @@
 }
 
 .documents .wrapper .swiper-button-next {
-  background-image: url("/images/icon/swiper-button-prev.svg");
+  background-image: url("../images/icon/swiper-button-prev.svg");
   width: 81px;
   height: 65px
 }
 
 .documents .wrapper .swiper-button-prev {
-  background-image: url("/images/icon/swiper-button-next.svg");
+  background-image: url("../images/icon/swiper-button-next.svg");
   width: 81px;
   height: 65px
 }
